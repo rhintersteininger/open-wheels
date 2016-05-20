@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageSwitcher
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageSwitcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="->"
+        android:id="@+id/button"
+        android:background="@drawable/button_main"
+        android:textColor="#000"
+        android:layout_marginTop="72dp"
+        android:layout_alignTop="@+id/imageSwitcher"
+        android:layout_toRightOf="@+id/imageSwitcher"
+        android:layout_toEndOf="@+id/imageSwitcher" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="&lt;-"
+        android:id="@+id/button2"
+        android:background="@drawable/button_main"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/imageSwitcher"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="34dp"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="max. Speed"
+        android:id="@+id/textView_customize_speed"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_above="@+id/progressBar_customize_speed"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acceleration"
+        android:id="@+id/textView_customize_acceleration"
+        android:layout_below="@+id/progressBar_customize_speed"
+        android:layout_alignLeft="@+id/progressBar_customize_speed"
+        android:layout_alignStart="@+id/progressBar_customize_speed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:id="@+id/textView_customize_weight"
+        android:layout_below="@+id/progressBar_customize_acceleration"
+        android:layout_alignLeft="@+id/progressBar_customize_acceleration"
+        android:layout_alignStart="@+id/progressBar_customize_acceleration" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_customize_speed"
+        android:max="100"
+        android:indeterminate="false"
+        android:progress="50"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/textView_customize_speed"
+        android:layout_alignStart="@+id/textView_customize_speed" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_customize_acceleration"
+        android:layout_alignRight="@+id/progressBar_customize_speed"
+        android:layout_alignEnd="@+id/progressBar_customize_speed"
+        android:layout_below="@+id/textView_customize_acceleration"
+        android:layout_alignLeft="@+id/textView_customize_acceleration"
+        android:layout_alignStart="@+id/textView_customize_acceleration"
+        android:max="100"
+        android:progress="20"
+        android:indeterminate="false" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_customize_weight"
+        android:max="100"
+        android:progress="70"
+        android:indeterminate="false"
+        android:layout_below="@+id/textView_customize_weight"
+        android:layout_alignLeft="@+id/progressBar_customize_acceleration" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Username"
+        android:key="username"/>
+
+    <CheckBoxPreference android:title="Invert Steer"
+        android:key="invertSteer"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference android:title="Invert Accelerometer"
+        android:key="invertAccelerometer"
+        android:defaultValue="false"/>
+
+</PreferenceScreen>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="89dp"
+        android:layout_marginStart="89dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Join Game"
+        android:id="@+id/button_lobby_join"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:background="@drawable/button_main"
+        android:textColor="#000" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:id="@+id/button_lobby_options"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button_lobby_join"
+        android:layout_alignStart="@+id/button_lobby_join"
+        android:background="@drawable/button_main"
+        android:textColor="#000"
+        android:onClick="openPreferences" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Customize"
+        android:id="@+id/button_lobby_customize"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/button_lobby_options"
+        android:layout_alignStart="@+id/button_lobby_options"
+        android:background="@drawable/button_main"
+        android:textColor="#000"
+        android:onClick="openCustomization" />
+</RelativeLayout>
