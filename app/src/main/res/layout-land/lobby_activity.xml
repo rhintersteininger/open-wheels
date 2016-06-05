@@ -12,7 +12,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="89dp"
-        android:layout_marginStart="89dp" />
+        android:layout_marginStart="89dp"
+        android:scaleType="fitCenter" />
 
     <Button
         android:layout_width="200dp"
@@ -24,7 +25,8 @@
         android:layout_marginLeft="68dp"
         android:layout_marginStart="68dp"
         android:background="@drawable/button_main"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:onClick="joinGame" />
 
     <Button
         android:layout_width="200dp"
