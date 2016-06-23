@@ -6,23 +6,23 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="175dp"
-        android:text="break"
         android:id="@+id/button_controller_break"
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
         android:layout_marginBottom="35dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/break_up" />
 
     <Button
         android:layout_width="200dp"
         android:layout_height="275dp"
-        android:text="gas"
         android:id="@+id/button_controller_gas"
         android:layout_alignBottom="@+id/button_controller_break"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="37dp"
-        android:layout_marginEnd="37dp" />
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/gas_up" />
 </RelativeLayout>

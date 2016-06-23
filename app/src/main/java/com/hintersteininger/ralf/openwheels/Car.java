@@ -14,14 +14,16 @@ import java.util.Arrays;
  */
 public class Car implements Serializable {
     private Bitmap image;
+    private String imageName;
     private String carName;
     private int acceleration;
     private int weight;
     private int max_speed;
 
-    public Car(String carName, Bitmap image, int acceleration, int weight, int max_speed) {
+    public Car(String carName, Bitmap image, String imageName, int acceleration, int weight, int max_speed) {
         this.carName = carName;
         this.image = image;
+        this.imageName = imageName;
         this.acceleration = acceleration;
         this.weight = weight;
         this.max_speed = max_speed;
@@ -67,16 +69,24 @@ public class Car implements Serializable {
         this.image = image;
     }
 
-    public byte[] getByteImage()
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
+    public byte[] getByteImage(int compressRatio)
     {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.PNG, 80, stream);
+        image.compress(Bitmap.CompressFormat.PNG, compressRatio, stream);
         byte[] bytes = stream.toByteArray();
         return bytes;
     }
 
     @Override
     public String toString() {
-        return Arrays.toString(getByteImage())+","+carName+","+acceleration+","+weight+","+max_speed;
+        return Arrays.toString(getByteImage(80))+","+carName+","+acceleration+","+weight+","+max_speed;
     }
 }

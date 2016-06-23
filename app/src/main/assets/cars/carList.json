@@ -1,3 +1,11 @@
 {"list":[
-    {"CarName":"Police Car", "Image":"police.png", "Acceleration":90, "Speed":60, "Weight":30}
+    {"CarName":"Police Car", "Image":"police.png", "Acceleration":90, "Speed":60, "Weight":30},
+    {"CarName":"Ambulance", "Image":"ambulance.png", "Acceleration":100, "Speed":10, "Weight":30},
+    {"CarName":"Audi", "Image":"Audi.png", "Acceleration":50, "Speed":100, "Weight":30},
+    {"CarName":"Viper", "Image":"Black_viper.png", "Acceleration":90, "Speed":60, "Weight":30},
+    {"CarName":"Car", "Image":"Car.png", "Acceleration":90, "Speed":60, "Weight":30},
+    {"CarName":"Mini Truck", "Image":"Mini_truck.png", "Acceleration":90, "Speed":60, "Weight":30},
+    {"CarName":"Mini Van", "Image":"Mini_van.png", "Acceleration":90, "Speed":60, "Weight":30},
+    {"CarName":"Taxi", "Image":"taxi.png", "Acceleration":90, "Speed":60, "Weight":30},
+    {"CarName":"Truck", "Image":"truck.png", "Acceleration":90, "Speed":60, "Weight":30}
 ]}

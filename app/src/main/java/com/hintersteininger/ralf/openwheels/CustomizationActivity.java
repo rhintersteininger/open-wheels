@@ -136,7 +136,7 @@ public class CustomizationActivity extends Activity {
         }
     }
 
-    private Car makeCar (JSONObject object)
+    public Car makeCar (JSONObject object)
     {
         try
         {
@@ -159,7 +159,7 @@ public class CustomizationActivity extends Activity {
 
 
 
-            return new Car(carName, bitmap, acceleration, weight, speed);
+            return new Car(carName, bitmap,imagePath, acceleration, weight, speed);
 
         }
         catch (JSONException e)
@@ -227,7 +227,7 @@ public class CustomizationActivity extends Activity {
         intent.putExtra("accel", c.getAcceleration());
         intent.putExtra("weight", c.getWeight());
         intent.putExtra("speed", c.getMax_speed());
-        intent.putExtra("image", c.getByteImage());
+        intent.putExtra("image", c.getImageName());
 
         System.out.println((allCars[currentCarNum % allCars.length]).toString());
         setResult(RESULT_OK, intent);

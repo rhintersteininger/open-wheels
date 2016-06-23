@@ -11,4 +11,11 @@
         android:key="invertAccelerometer"
         android:defaultValue="false"/>
 
+    <Preference android:title="Icon"
+        android:key="a"
+        android:defaultValue="no_image_new.png"/>
+
+    <Preference android:key="currentCar"
+        android:selectable="false"
+        android:defaultValue="0"/>
 </PreferenceScreen>

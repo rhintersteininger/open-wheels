@@ -4,51 +4,85 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="89dp"
-        android:layout_marginStart="89dp"
-        android:scaleType="fitCenter" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Join Game"
-        android:id="@+id/button_lobby_join"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_marginLeft="68dp"
-        android:layout_marginStart="68dp"
-        android:background="@drawable/button_main"
-        android:textColor="#000"
-        android:onClick="joinGame" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/layoutLobby"
+            android:padding="10dp"></LinearLayout>
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Options"
-        android:id="@+id/button_lobby_options"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button_lobby_join"
-        android:layout_alignStart="@+id/button_lobby_join"
-        android:background="@drawable/button_main"
-        android:textColor="#000"
-        android:onClick="openPreferences" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="2"
+            android:onClick="openCustomization" />
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Customize"
-        android:id="@+id/button_lobby_customize"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/button_lobby_options"
-        android:layout_alignStart="@+id/button_lobby_options"
-        android:background="@drawable/button_main"
-        android:textColor="#000"
-        android:onClick="openCustomization" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join Game"
+                android:id="@+id/button_lobby_join"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:background="@drawable/button_main"
+                android:textColor="#000"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Options"
+                android:id="@+id/button_lobby_options"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/button_lobby_join"
+                android:layout_alignStart="@+id/button_lobby_join"
+                android:background="@drawable/button_main"
+                android:textColor="#000"
+                android:onClick="openPreferences"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customize"
+                android:id="@+id/button_lobby_customize"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignLeft="@+id/button_lobby_options"
+                android:layout_alignStart="@+id/button_lobby_options"
+                android:background="@drawable/button_main"
+                android:textColor="#000"
+                android:onClick="openCustomization"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
