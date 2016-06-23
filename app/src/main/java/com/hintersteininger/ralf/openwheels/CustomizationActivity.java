@@ -221,6 +221,12 @@ public class CustomizationActivity extends Activity {
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
+
+        if (currentCarNum < 0)
+        {
+            currentCarNum += allCars.length;
+        }
+
         Car c = allCars[currentCarNum % allCars.length];
 
         intent.putExtra("carName", c.getCarName());

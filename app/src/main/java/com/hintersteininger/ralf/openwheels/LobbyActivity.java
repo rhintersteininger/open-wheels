@@ -130,7 +130,11 @@ public class LobbyActivity extends Activity{
                 @Override
                 public void onClick(View v) {
                     try {
-                        Connection.connectionSocket.close();
+                        if (Connection.connectionSocket != null) {
+                            Connection.connectionSocket.close();
+                            Connection.connectionSocket = null;
+                        }
+                        findGame.setText("Join Game");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

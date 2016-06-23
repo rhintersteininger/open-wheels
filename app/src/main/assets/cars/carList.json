@@ -1,11 +1,11 @@
 {"list":[
-    {"CarName":"Police Car", "Image":"police.png", "Acceleration":90, "Speed":60, "Weight":30},
-    {"CarName":"Ambulance", "Image":"ambulance.png", "Acceleration":100, "Speed":10, "Weight":30},
-    {"CarName":"Audi", "Image":"Audi.png", "Acceleration":50, "Speed":100, "Weight":30},
-    {"CarName":"Viper", "Image":"Black_viper.png", "Acceleration":90, "Speed":60, "Weight":30},
-    {"CarName":"Car", "Image":"Car.png", "Acceleration":90, "Speed":60, "Weight":30},
-    {"CarName":"Mini Truck", "Image":"Mini_truck.png", "Acceleration":90, "Speed":60, "Weight":30},
-    {"CarName":"Mini Van", "Image":"Mini_van.png", "Acceleration":90, "Speed":60, "Weight":30},
-    {"CarName":"Taxi", "Image":"taxi.png", "Acceleration":90, "Speed":60, "Weight":30},
-    {"CarName":"Truck", "Image":"truck.png", "Acceleration":90, "Speed":60, "Weight":30}
+    {"CarName":"Police Car", "Image":"police.png", "Acceleration":70, "Speed":60, "Weight":45},
+    {"CarName":"Ambulance", "Image":"ambulance.png", "Acceleration":50, "Speed":30, "Weight":60},
+    {"CarName":"Sport Car", "Image":"sport_car.png", "Acceleration":80, "Speed":70, "Weight":30},
+    {"CarName":"Viper", "Image":"viper.png", "Acceleration":100, "Speed":60, "Weight":40},
+    {"CarName":"Muscle Car", "Image":"muscle_car.png", "Acceleration":90, "Speed":80, "Weight":25},
+    {"CarName":"Mini Truck", "Image":"mini_truck.png", "Acceleration":50, "Speed":60, "Weight":80},
+    {"CarName":"Mini Van", "Image":"mini_van.png", "Acceleration":40, "Speed":90, "Weight":70},
+    {"CarName":"Taxi", "Image":"taxi.png", "Acceleration":80, "Speed":90, "Weight":40},
+    {"CarName":"Truck", "Image":"truck.png", "Acceleration":40, "Speed":70, "Weight":100}
 ]}
