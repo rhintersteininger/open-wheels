@@ -107,7 +107,7 @@ public class Controller extends Activity {
 
                     while (true) {
                         writer.write("frameData:" + accelerationMode + ";" + getTilt() * STEER_MULTIPLICATOR * invertSteer + ";" + specialButton);
-                        Thread.sleep(tickrate);
+                        Thread.sleep(1000/tickrate);
                     }
 
                 }catch (InterruptedException e){
